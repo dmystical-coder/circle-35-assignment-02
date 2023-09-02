@@ -1,3 +1,4 @@
+![README banner](./assets/images/readme-banner.png)
 # Group JavaScript Calculator Project 
 
 ## Prerequisites
@@ -21,7 +22,7 @@ Please, read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to collaborat
 ## Contributors
 * **Abdulsalam Baruwa** - *Maintainer* - [GitHub profile](https://github.com/dmystical-coder)
 
-See also the list of [contributors](https://github.com/dmystical-coder/circle-35-assignment-02/blob/main/Contributors.md) who participated in this project.
+See also the list of [contributors](CONTRIBUTORS.md) who participated in this project.
 
 ## License
 
