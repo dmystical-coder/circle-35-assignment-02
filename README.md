@@ -1,4 +1,7 @@
-![README banner](./assets/images/readme-banner.png)
+<div align="center">
+  <img src="./assets/images/readme-banner.png" alt="README banner"/>
+</div>
+
 # Group JavaScript Calculator Project 
 
 ## Prerequisites
