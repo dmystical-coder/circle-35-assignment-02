@@ -4,6 +4,10 @@
 
 # Group JavaScript Calculator Project 
 
+Leveraging AltSchool circles, we are to build a very basic calculator with Javascript.
+
+![Calculator UI](./assets/images/calculator-ui.gif)
+
 ## Prerequisites
 What is required of you to contribute to this project:
 
@@ -24,10 +28,15 @@ What is required of you to contribute to this project:
 Please, read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to collaborate on this project.
 
 ## Contributors
-* **Abdulsalam Baruwa** - *Maintainer* - [GitHub profile](https://github.com/dmystical-coder)
 
-See also the list of [contributors](CONTRIBUTORS.md) who participated in this project.
+The list of contributors who participated in this project.
+
+* **Abdulsalam Baruwa** - *Maintainer* - [GitHub profile](https://github.com/dmystical-coder)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgements
+
+* Design inspiration from [Rafaela Lucas daily UI challenge](https://rafaelalucas.com/dailyui/4/) - [Rafaela Lucas](https://rafaelalucas.com/)
