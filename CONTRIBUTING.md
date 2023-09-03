@@ -14,8 +14,9 @@
 ## Collaborative workflow
 This project is going to adapt the fork and pull model.
 
-### Fork
-
+---
+### Fork the project repository
+---
 #### (1) Go to [dmystical-coder/circle-35-assignment-02](https://github.com/dmystical-coder/circle-35-assignment-02/tree/main)
 
 #### (2) Click on Fork
@@ -30,8 +31,9 @@ This project is going to adapt the fork and pull model.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/WPNCusz3gcxsH5vn76iH0_ab-capture-image.png)
 
-### Clone
-
+---
+### Clone your forked repository
+---
 Next, you want to clone your forked repo to your local machine.
 
 #### (1) Click on Code
@@ -54,18 +56,21 @@ Next, you want to clone your forked repo to your local machine.
 
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/GuIgdBZ-hTqZGT8cE85C4_screenshot-2023-09-03-091142.png)
 
-### Add and commit
-
+---
+### Add and commit your changes
+---
 #### Go ahead to add your changes to the staging area, using the command, `git add`, followed by the name of the file(s). Next, commit the file(s) and add a commit message, `git commit -m 'commit message goes here'`
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/niwYVfV2HKzp1_9rjtWNz_screenshot-2023-09-03-091229.png)
 
-### Push
-
+---
+### Push your changes
+---
 #### Next, you want to push your changes to the remote repository. Run this command, `git push origin <the branch name>`
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/OAVS5xb4IP8pgBB-Mkcji_screenshot-2023-09-03-091417.png)
 
-### Pull Request (PR)
-
+---
+### Initiate a Pull Request (PR)
+---
 #### (1) Go to the link you get after pushing your changes. Copy the first link and paste in your browser
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/i67SeGyAM1EUQPeB-qIqV_marked-git-push.jpg)
 
@@ -100,5 +105,5 @@ Next, you want to clone your forked repo to your local machine.
 ![](https://archbee-image-uploads.s3.amazonaws.com/-PslVSiNgmjNd7mYSlcZe/Q835Fgi15Ops3dSGk7sv4_ab-capture-image.png)
 
 #### (8) Await a response from the reviewer. You want to watch out for an email
-
+---
 ## Thank You (•_•)
