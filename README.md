@@ -13,7 +13,8 @@ What is required of you to contribute to this project:
 * JavaScript - To add functionalities to our calculator.
 
 ## Features
-* Light and Dark mode.
+* Basic arithmetic operations.
+* Toggle between light and Dark mode.
 
 ## Contributing
 
