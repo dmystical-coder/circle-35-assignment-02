@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>circle-35 Calculator</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- button to change mode -->
+      <div class="mode-container">
+        <button class="btn-mode" id="btn-mode" type="button">
+          Click Me to Change Mode
+        </button>
+      </div>
+
+      <!-- This is the the calculator body consisting of both the calculation & result display, as well as all the buttons -->
+      <div class="calculator-container">
+        <!-- This below is the display div consisting of both the calculating and result displays -->
+        <div class="display">
+          <div class="calculating-display">Calculating Display</div>
+          <div class="result-display">Result Display</div>
+        </div>
+        <!-- This below is the buttons' container consisting of both the numeric and function buttons -->
+        <div class="btn-container">
+          <div class="btn-section-B">
+            <div class="btn-section-B-i">
+              <div class="btn-single">Del</div>
+            </div>
+            <div class="btn-section-B-ii">
+              <div class="btn-single btn-return">Clear</div>
+              <div class="btn-single btn-divide">/</div>
+            </div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-7">7</div>
+            <div class="btn-single btn-8">8</div>
+            <div class="btn-single btn-9">9</div>
+            <div class="btn-single btn-multiply">*</div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-4">4</div>
+            <div class="btn-single btn-5">5</div>
+            <div class="btn-single btn-6">6</div>
+            <div class="btn-single btn-subtract">-</div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-1">1</div>
+            <div class="btn-single btn-2">2</div>
+            <div class="btn-single btn-3">3</div>
+            <div class="btn-single btn-add">+</div>
+          </div>
+          <div class="btn-section-B">
+            <div class="btn-section-B-ii">
+              <div class="btn-single btn-0">0</div>
+              <div class="btn-single btn-dot">.</div>
+            </div>
+            <div class="btn-section-B-i">
+              <div class="btn-single">=</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/app.js"></script>
-</body>
+  </body>
 </html>
