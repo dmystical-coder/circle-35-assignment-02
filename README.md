@@ -32,7 +32,7 @@ Please, read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to collaborat
 The list of contributors who participated in this project.
 
 * **Abdulsalam Baruwa** - *Maintainer* - [GitHub profile](https://github.com/dmystical-coder)
-
+* **Gloria Ngbea** 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
