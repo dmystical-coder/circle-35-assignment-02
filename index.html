@@ -9,37 +9,61 @@
 <body>
     <!-- The toggle switch section -->
     <header>
-        <section class="heading">
-            <h2>DARK MODE</h2>
-        </section>
-        <label>
-            <input type="checkbox" id="toggle">
-        </label>
-        <div class="slider"></div>
+      <div class="mode-container">
+        <button class="btn-mode" id="btn-mode" type="button">
+          Click Me to Change Mode
+        </button>
+      </div>
     </header>
     <!-- the main calculator -->
     <main>
-        <section class="calculator">
-                <div class="display">0</div>
-                <div class="button del">DEL</div>
-                <div class="button backspace">⬅</div>
-                <div class="button operation">/</div>
-                <div class="button number">7</div>
-                <div class="button number">8</div>
-                <div class="button number">9</div>
-                <div class="button operation">*</div>
-                <div class="button number">4</div>
-                <div class="button number">5</div>
-                <div class="button number">6</div>
-                <div class="button operation">-</div>
-                <div class="button number">1</div>
-                <div class="button number">2</div>
-                <div class="button number">3</div>
-                <div class="button operation">+</div>
-                <div class="button number btn0">0</div>
-                <div class="button dot">.</div>
-                <div class="button equal">=</div>
-        </section>
+        <!-- This is the the calculator body consisting of both the calculation & result display, as well as all the buttons -->
+      <div class="calculator-container">
+        <!-- This below is the display div consisting of both the calculating and result displays -->
+        <div class="display">
+          <div class="calculating-display"><h5 class="calculating-display-element">Calculating Display</h5></div>
+          <div class="result-display"><h3 class="result-display-element">Result Display</h3></div>
+        </div>
+        <!-- This below is the buttons' container consisting of both the numeric and function buttons -->
+        <div class="btn-container">
+          <div class="btn-section-B">
+            <div class="btn-section-B-i">
+              <div class="btn-single">Del</div>
+            </div>
+            <div class="btn-section-B-ii">
+              <div class="btn-single btn-return">Clear</div>
+              <div class="btn-single btn-divide">/</div>
+            </div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-7">7</div>
+            <div class="btn-single btn-8">8</div>
+            <div class="btn-single btn-9">9</div>
+            <div class="btn-single btn-multiply">*</div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-4">4</div>
+            <div class="btn-single btn-5">5</div>
+            <div class="btn-single btn-6">6</div>
+            <div class="btn-single btn-subtract">-</div>
+          </div>
+          <div class="btn-section-A">
+            <div class="btn-single btn-1">1</div>
+            <div class="btn-single btn-2">2</div>
+            <div class="btn-single btn-3">3</div>
+            <div class="btn-single btn-add">+</div>
+          </div>
+          <div class="btn-section-B">
+            <div class="btn-section-B-ii">
+              <div class="btn-single btn-0">0</div>
+              <div class="btn-single btn-dot">.</div>
+            </div>
+            <div class="btn-section-B-i">
+              <div class="btn-single">=</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="./assets/js/app.js"></script>
 </body>
