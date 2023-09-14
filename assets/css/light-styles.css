@@ -1,0 +1,168 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #107c79;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.mode-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mode {
+    margin: 5em auto 5em auto;
+}
+
+.calculator-container{
+    height: 26.9em;
+    border: 2px solid #f1eaea;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: #fff;
+    min-width: 320px;
+    min-height: 400px;
+    box-shadow: 12px 6 0 rgba(255, 255, 255, 0.2);
+}
+
+.display {
+    background-color: #c8c1c1;
+    color: white;
+    border:20px;
+    border-radius: px;
+    margin-bottom:16px;
+    text-align: right;
+    padding-right:15px;
+    margin-top:-15px;
+    padding-bottom:0.4em;
+}
+
+.calculating-display{
+    height: 2em;
+    margin-top: 7px;
+    color: rgb(243, 239, 239);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.result-display{
+    height: 1.7em;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.btn-container{
+    background-color: rgb(255, 255, 255);
+    height: 15em;
+}
+
+.btn-section-A{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(26, 19, 19);
+    height: 3.8em;
+}
+
+.btn-section-B{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    height: 3.8em;
+}
+
+.btn-section-B-i{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.3em;
+    border: 1 solid #faf9f9;
+    height: 3.8em;
+}
+
+.btn-section-B-ii{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 3.8em;
+}
+
+.btn-single{
+        border: 1px #b4aaaa;
+        justify-content: center;
+        margin: 1px;
+        align-items: center;
+        display: flex;
+        background-color:#CED2D8 ;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }    
+}
+.btn-double-column {
+    width: 14em;
+}
+.btn-return {
+    color: #000;
+}
+.btn-divide {
+    background-color: #B9D7D5;
+    color: #000;
+}
+.btn-multiply {
+    background-color: #B9D7D5;
+}  
+.btn-subtract {
+    background-color: #B9D7D5;
+} 
+.btn-add {
+    background-color: #B9D7D5;
+}  
+.btn-1 {
+    background-color: #E5E4EA;
+}
+.btn-2 {
+    background-color: #E5E4EA;
+}
+.btn-3 {
+    background-color: #E5E4EA;
+}
+.btn-4 {
+    background-color: #E5E4EA;
+}
+.btn-5 {
+    background-color: #E5E4EA;
+}
+.btn-6 {
+    background-color: #E5E4EA;
+}
+.btn-7 {
+    background-color: #E5E4EA;
+}
+.btn-8 {
+    background-color: #E5E4EA;
+}
+.btn-9 {
+    background-color: #E5E4EA;
+}
+.btn-0 {
+    background-color: #E5E4EA;
+    color: #000;
+}
+.btn-dot {
+    background-color: #E5E4EA;
+    color: #000;
+}
+.btn-equal {
+    background-color: #306064 ;
+}
