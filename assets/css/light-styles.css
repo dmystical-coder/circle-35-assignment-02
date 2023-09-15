@@ -1,4 +1,4 @@
-body {
+body.active {
     width: 100%;
     height: 100%;
     background-color: #107c79;
@@ -9,23 +9,60 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-main {
+header.active {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .dark.active{
+    color:white;
+    letter-spacing: 2px;
+  }
+  #toggle.active {
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+      inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  #toggle .indicator.active {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 25px;
+    margin: 2px;
+    height:20px; 
+    background: linear-gradient(to bottom, #eaeaea, #faf9f9);
+    border-radius: 30px;
+    box-shadow:0 8px 20px rgba(225,225, 225, 0.8), inset 0 4px 4px rgba(255, 255, 255, 1),
+    inset 0 -4px 4px rgba(255, 255, 255, 1);
+    transform: scale(0.9);
+    transition: 0.5s;
+    left: 20px;
+  }
+  
+/* main {
     width: 20%;
     margin: 0 auto;
 }
 
-.mode-container{
+.modecontainer{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.btn-mode {
+/* .btnmode {
     margin: 5em auto 5em auto;
-}
+} */
 
-.calculator-container{
+/* .calculatorcontainer{
     height: 26.9em;
     border: 2px solid #f1eaea;
     border-radius: 5px;
@@ -47,9 +84,9 @@ main {
     padding-right:15px;
     margin-top:-15px;
     padding-bottom:0.4em;
-}
+} */
 
-.calculating-display{
+/* .calculatingdisplay{
     height: 2em;
     margin-top: 7px;
     color: rgb(243, 239, 239);
@@ -57,32 +94,61 @@ main {
     font-weight: 400;
 }
 
-.result-display{
+.resultdisplay{
     height: 1.7em;
     font-size: 1.1em;
     font-weight: 100;
-}
+} */
+.calculatorcontainer.active{
+    margin: 5% auto;
+    height: 28em;
+    border: 2px solid #f1eaea;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #fff;
+    max-width: 20em;
+    box-shadow: 12px 6 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease ;
+  transform: rotateY(180deg);
 
-.btn-container{
+}
+.display.active {
+    background-color: #c8c1c1;
+    color: white;
+    border:20px;
+    border-radius: 3px;
+    margin-bottom:16px;
+    text-align: right;
+    padding-right:15px;
+    padding-bottom:0.4em;
+   
+    height: 5em;
+    font-size: 1.2em;
+    font-weight: 400;
+     margin-top: 0.5em; 
+    
+}
+.btncontainer.active{
     background-color: rgb(255, 255, 255);
     height: 15em;
+    transform: rotateY(180deg);
 }
 
-.btn-section-A{
+.btnsectionA.active{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: rgb(26, 19, 19);
     height: 3.8em;
 }
 
-.btn-section-B{
+.btnsectionB.active{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
     height: 3.8em;
 }
 
-.btn-section-B-i{
+.btnsectionBi.active{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.3em;
@@ -90,79 +156,114 @@ main {
     height: 3.8em;
 }
 
-.btn-section-B-ii{
+.btnsectionBii.active{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 3.8em;
 }
 
-.btn-single{
+.btnsingle.active{
         border: 1px #b4aaaa;
         justify-content: center;
         margin: 1px;
         align-items: center;
         display: flex;
         background-color:#CED2D8 ;
+        opacity: 1;
         &:hover{
             background-color: #000;
             color: #fff;
             cursor: pointer;
         }    
 }
-.btn-double-column {
+.btndoublecolumn.active {
     width: 14em;
+    opacity: 1;
 }
-.btn-return {
+.btnreturn.active {
     color: #000;
+    opacity: 1;
 }
-.btn-divide {
+.btndivide.active {
     background-color: #B9D7D5;
     color: #000;
+    opacity: 1;
 }
-.btn-multiply {
-    background-color: #B9D7D5;
+.btnmultiply.active {
+    color: #000;
+    background-color: #B9D7D5 ;
+    opacity: 1;
 }  
-.btn-subtract {
+.btnsubtract.active {
     background-color: #B9D7D5;
+    color: #000;
+    opacity: 1;
 } 
-.btn-add {
+.btnadd.active {
     background-color: #B9D7D5;
+    opacity: 1;
+    color: #000;
 }  
-.btn-1 {
+.btn1.active {
     background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
 }
-.btn-2 {
+.btn2.active {
     background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
 }
-.btn-3 {
+.btn3.active {
     background-color: #E5E4EA;
+    margin: 1px;
+   justify-content: center;
+   padding-top: 21px;
+    text-align: center;
+    opacity: 1;
+    color: #000;
 }
-.btn-4 {
+.btn4.active {
     background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
 }
-.btn-5 {
+.btn5.active {
     background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
 }
-.btn-6 {
+.btn6.active {
     background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
 }
-.btn-7 {
-    background-color: #E5E4EA;
-}
-.btn-8 {
-    background-color: #E5E4EA;
-}
-.btn-9 {
-    background-color: #E5E4EA;
-}
-.btn-0 {
+.btn7.active {
     background-color: #E5E4EA;
     color: #000;
 }
-.btn-dot {
+.btn8.active {
     background-color: #E5E4EA;
+    opacity: 1;
     color: #000;
 }
-.btn-equal {
+.btn9.active {
+    background-color: #E5E4EA;
+    opacity: 1;
+    color: #000;
+}
+.btn0.active {
+    background-color: #E5E4EA;
+    color: #000;
+    opacity: 1;
+    color: #000;
+}
+.btndot.active {
+    background-color: #E5E4EA;
+    color: #000;
+    opacity: 1;
+}
+.btnequal.active {
     background-color: #306064 ;
+    opacity: 1;
 }

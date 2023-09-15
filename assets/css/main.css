@@ -10,24 +10,64 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+header {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .dark{
+    color:white;
+    letter-spacing: 2px;
+  }
+  #toggle {
+    width: 50px;
+    height: 25px;
+    background: rgb(69, 69, 69);
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  #toggle .indicator {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 25px;
+    margin: 2px;
+    height:20px; 
+    background: linear-gradient(to bottom, grey, rgb(67, 65, 65));
+    border-radius: 30px;
+    box-shadow: inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
+  #toggle.active .indicator {
+    left: 20px;
+  }
+  
 
-main {
+/* main {
     width: 20%;
     margin: 0 auto;
     color: #181414;
 }
 
-.mode-container{
+.modecontainer{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-mode {
+.btnmode {
     margin: 3em auto 10em auto;
-}
-
-.calculator-container{
+} */
+/* 
+.calculatorcontainer{
     height: 27em;
     border: 2px solid #000;
     border-radius: 5px;
@@ -50,9 +90,39 @@ main {
     border-radius: 5px;
     margin-top: -20px;
     padding-bottom: 0.4em;
-}
+} */
 
-.calculating-display{
+.calculatorcontainer {
+    margin: 5% auto;
+    color: #181414;
+    height: 28em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #2e2b2b;
+    max-width: 20em;
+    box-shadow: 10px 10px 0 rgba(63, 49, 49, 0.2);
+    transition: all 0.5s ease;
+  }
+  
+  
+  .display {
+    background-color: #130e0e;
+    color: white;
+    border: 20px;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 0.4em;
+    height: 5em;
+    font-size: 1.2em;
+    font-weight: 400;
+     margin-top: 0.5em; 
+    
+  }
+
+/* .calculatingdisplay{
     height: 2em;
     color: rgb(243, 239, 239);
     font-size: 1.2em;
@@ -63,33 +133,33 @@ main {
     padding-top: 10px;
 }
 
-.result-display{
+.resultdisplay{
     height: 1.7em;
     font-size: 1.1em;
     font-weight: 100;
-}
+} */
 
-.btn-container{
+.btncontainer{
     background-color: rgb(45, 47, 49);
     height: 15em;
     border-radius: 5px;
 }
 
-.btn-section-A{
+.btnsectionA{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: rgb(85, 128, 85);
     height: 3.8em;
 }
 
-.btn-section-B{
+.btnsectionB{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
     height: 3.8em;
 }
 
-.btn-section-B-i{
+.btnsectionBi{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.3em;
@@ -97,13 +167,13 @@ main {
     height: 3.8em;
 }
 
-.btn-section-B-ii{
+.btnsectionBii{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 3.8em;
 }
 
-.btn-single{
+.btnsingle{
         border: 1px #000;
         justify-content: center;
         margin: 1px;
@@ -117,42 +187,51 @@ main {
         }    
 }
 
-.btn-del{
+
+.btndel{
     background-color: rgb(32, 28, 28);
 }
 
-.btn-equal{
+.btnequal{
     background-color: #638a6c;
     border-bottom-right-radius: 5px;
 }
 
-.btn-0{
+.btn0{
     color: rgb(85, 128, 85);
 }
 
-.btn-dot{
+.btndot{
     color: rgb(85, 128, 85);
 }
 
-.btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9, .btn-0, .btn-dot{
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9, .btn0, .btndot{
     opacity: 0.7;
 }
+.btn3{
+    margin: 1px;
+    justify-content: center;
+   padding-top: 21px;
+    text-align: center;
+    background-color: rgb(32, 28, 28);
+}
 
-.btn-del, .btn-return{
+
+.btndel, .btnreturn{
     opacity: 0.8;
 }
 
-.btn-double-column{
+.btndoublecolumn{
     width: 14em;
 }
 
 /* Dark mode switch */
-body.dark-mode {
+body.darkmode {
     background-color: #2e2b2b;
     color: #ffffff;
 }
 
-body.dark-mode .btn-mode {
+body.darkmode .btnmode {
     background-color: #107c79;
     color: #333333;
 }
