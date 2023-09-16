@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const display = document.querySelector(".display")
+const contdisplay = document.querySelector(".contdisplay")
 const calculatorcontainer = document.querySelector(".calculatorcontainer");
 const btncontainer = document.querySelector(".btncontainer");
 const btnsectionA = document.querySelector(".btnsectionA");
@@ -33,7 +33,7 @@ toggle.onclick = function () {
   calculatorcontainer.classList.toggle("active");
   toggle.classList.toggle("active");
   body.classList.toggle("active");
-  display.classList.toggle("active")
+  contdisplay.classList.toggle("active")
   btncontainer.classList.toggle("active")
   btnsectionA.classList.toggle("active")
   btnsectionB.classList.toggle("active")
@@ -61,43 +61,65 @@ toggle.onclick = function () {
 
 };
 
-
-
-// Function to update the calculation value
-let calculation = '';
-document.querySelector("display")
-
-function updateCalculation(value) {
-  calculation += value;
-  document.querySelector('display').innerText= updateCalculation;
+let contdisplay = document;
+document.querySelector('contdisplay')
+function updateCalculation
+(num) {
+  contdisplay.value += num
+  
 }
-
-// Function to get the calculation results
-function calculateResult() {
+function calculateResult(){
   try{
-    calculation = eval(calculation);
-    document.querySelector('display').innerText= calculation;
-    
-  } catch (error){
-    document.querySelector('display').innerText= 'error';
-    calculation='';
+    contdisplay.value= eval (contdisplay.value);
   }
-  
+  catch(error){
+    alert('invalid')
+  }
+}
+function clear(){
+  contdisplay.value =""
   
 }
+function deleteLastCharacter(){
+  contdisplay.value = display.value.slice (0,-1)
+ 
 
-// Find the clear button element by ID
-const clearButton = document.getElementById('clear-button');
 
-// Add a click event listener to the clear button
-clearButton.addEventListener('click', function () {
-  calculation = ''; // Clear the calculation
+// // Function to update the calculation value
+// let calculation = '';
+// document.querySelector("display")
+
+// function updateCalculation(value) {
+//   calculation += value;
+//   document.querySelector('display').innerText= updateCalculation;
+// }
+
+// // Function to get the calculation results
+// function calculateResult() {
+//   try{
+//     calculation = eval(calculation);
+//     document.querySelector('display').innerText= calculation;
+    
+//   } catch (error){
+//     document.querySelector('display').innerText= 'error';
+//     calculation='';
+//   }
   
-});
-
-// Function to delete the last character
-function deleteLastCharacter() {
-  calculation = calculation.slice(0, -1); // Remove the last character
   
-}
+// }
+
+// // Find the clear button element by ID
+// const clearButton = document.getElementById('clear-button');
+
+// // Add a click event listener to the clear button
+// clearButton.addEventListener('click', function () {
+//   calculation = ''; // Clear the calculation
+  
+// });
+
+// // Function to delete the last character
+// function deleteLastCharacter() {
+//   calculation = calculation.slice(0, -1); // Remove the last character
+  
+// }
 

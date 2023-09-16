@@ -22,7 +22,7 @@
         <!-- This is the the calculator body consisting of both the calculation & result display, as well as all the buttons -->
       <div class="calculatorcontainer">
         <!-- This below is the display div consisting of both the calculating and result displays -->
-        <div class="display">
+        <div class="contdisplay">
         </div>
         <!-- This below is the buttons' container consisting of both the numeric and function buttons -->
         <div class="btncontainer">
@@ -31,7 +31,7 @@
               <div class="btnsingle btndel" onclick="deleteLastCharacter()">Del</div>
             </div>
             <div class="btnsectionBii">
-              <div class="btnsingle btnreturn"  id="clear-button">Clear</div>
+              <div class="btnsingle btnreturn"  onclick="clear(' ')">Clear</div>
               <div class="btnsingle btndivide" onclick="updateCalculation(' / ')">/</div>
             </div>
           </div>

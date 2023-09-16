@@ -112,7 +112,7 @@ header.active {
   transform: rotateY(180deg);
 
 }
-.display.active {
+.contdisplay.active {
     background-color: #c8c1c1;
     color: white;
     border:20px;
