@@ -23,12 +23,22 @@
       <div class="calculatorcontainer">
         <!-- This below is the display div consisting of both the calculating and result displays -->
         <div class="display">
+       
+        <p>
+    
+      <p>
+        <p class="calculation-display" id="calculation-display">0</p>
+
+        <div class="result-display" id="result-display">0</div>
+
+      </p>
+
         </div>
         <!-- This below is the buttons' container consisting of both the numeric and function buttons -->
         <div class="btncontainer">
           <div class="btnsectionB">
             <div class="btnsectionBi">
-              <div class="btnsingle btndel" onclick="deleteLastCharacter()">Del</div>
+              <div class="btnsingle btndel" onclick="deleteLastCharacter()" id="del-button">Del</div>
             </div>
             <div class="btnsectionBii">
               <div class="btnsingle btnreturn"  id="clear-button">Clear</div>
