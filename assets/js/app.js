@@ -69,7 +69,7 @@ document.querySelector("display")
 
 function updateCalculation(value) {
   calculation += value;
-  document.querySelector('display').innerText= calculation;
+  document.querySelector('display').innerText= updateCalculation;
 }
 
 // Function to get the calculation results
