@@ -28,38 +28,38 @@
         <div class="btncontainer">
           <div class="btnsectionB">
             <div class="btnsectionBi">
-              <div class="btnsingle btndel">Del</div>
+              <div class="btnsingle btndel" onclick="deleteLastCharacter()">Del</div>
             </div>
             <div class="btnsectionBii">
-              <div class="btnsingle btnreturn">Clear</div>
-              <div class="btnsingle btndivide">/</div>
+              <div class="btnsingle btnreturn"  id="clear-button">Clear</div>
+              <div class="btnsingle btndivide" onclick="updateCalculation(' / ')">/</div>
             </div>
           </div>
           <div class="btnsectionA">
-            <div class="btnsingle btn7">7</div>
-            <div class="btnsingle btn8">8</div>
-            <div class="btnsingle btn9">9</div>
-            <div class="btnsingle btnmultiply">*</div>
+            <div class="btnsingle btn7" onclick="updateCalculation('7')">7</div>
+            <div class="btnsingle btn8" onclick="updateCalculation('8')">8</div>
+            <div class="btnsingle btn9" onclick="updateCalculation('9')">9</div>
+            <div class="btnsingle btnmultiply" onclick="updateCalculation(' * ')">*</div>
           </div>
           <div class="btnsectionA">
-            <div class="btnsingle btn4">4</div>
-            <div class="btnsingle btn5">5</div>
-            <div class="btnsingle btn6">6</div>
-            <div class="btnsingle btnsubtract">-</div>
+            <div class="btnsingle btn4" onclick="updateCalculation('4')">4</div>
+            <div class="btnsingle btn5" onclick="updateCalculation('5')">5</div>
+            <div class="btnsingle btn6" onclick="updateCalculation('6')">6</div>
+            <div class="btnsingle btnsubtract" onclick="updateCalculation('-')">-</div>
           </div>
           <div class="btnsectionA">
-            <div class="btnsingle btn1">1</div>
-            <div class="btnsingle btn2">2</div>
-            <div class="btn-single btn3">3</div>
-            <div class="btnsingle btnadd">+</div>
+            <div class="btnsingle btn1" onclick="updateCalculation('1')">1</div> 
+            <div class="btnsingle btn2" onclick="updateCalculation('2')">2</div>
+            <div class="btn-single btn3" onclick="updateCalculation('3')">3</div>
+            <div class="btnsingle btnadd" onclick="updateCalculation(' + ');">+</div>
           </div>
           <div class="btnsectionB">
             <div class="btnsectionBii">
-              <div class="btnsingle btn0">0</div>
-              <div class="btnsingle btndot">.</div>
+              <div class="btnsingle btn0" onclick="updateCalculation('0')">0</div>
+              <div class="btnsingle btndot" onclick="updateCalculation('.')">.</div>
             </div>
             <div class="btnsectionBi">
-              <div class="btnsingle btnequal">=</div>
+              <div class="btnsingle btnequal" onclick="calculateResult()">=</div>
             </div>
           </div>
         </div>
