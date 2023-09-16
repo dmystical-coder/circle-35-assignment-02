@@ -35,7 +35,11 @@ Name | Role | GitHub profile
 ------|------------ | ----------------
 **Abdulsalam Baruwa** | *Maintainer* | [dmystical-coder](https://github.com/dmystical-coder)
 **Gloria Ngbea** | *Contributor* | [Gloria](https://github.com/NgbeaGloriaJames)
-**Chukwuemeka Omeje** | *Contributor* | [Richard](https://github.com/Richard-githome) 
+**Chukwuemeka Omeje** | *Contributor* | [Richard](https://github.com/Richard-githome)
+**Oyewole Yetunde** | *Contributor* | [Oyetundee](https://github.com/Oyetundee)
+**Anataku Ameerah** | *Contributor* | [Ameerah](https://github.com/AnatakuAmeerah)
+**Victor Goddy** | *Contributor* | [Lord of grosries](https://github.com/victorGoddy)
+**Jubril Adebiyi** | *Contributor* | [Torn2code](https://github.com/Torn2code)
 
 ## License
 
