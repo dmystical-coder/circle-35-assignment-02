@@ -60,3 +60,33 @@ btn7.classList.toggle("active");
   btnmultiply.classList.toggle("active")
 
 };
+
+// Function to update the calculation value
+let calculation = '';
+
+function updateCalculation(value) {
+  calculation += value;
+  console.log(calculation);
+}
+
+// Function to get the calculation results
+function calculateResult() {
+    calculation = eval(calculation);
+   console.log(calculation)
+  }
+
+  // Find the clear button element by ID
+const clearButton = document.getElementById('clear-button');
+
+// Add a click event listener to the clear button
+clearButton.addEventListener('click', function () {
+  calculation = ''; // Clear the calculation
+  console.log(calculation)
+ });
+
+ // Function to delete the last character
+function deleteLastCharacter() {
+  calculation = calculation.slice(0, -1); // Remove the last character
+ console.log(calculation)
+}
+
