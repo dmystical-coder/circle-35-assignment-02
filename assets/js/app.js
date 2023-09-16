@@ -89,6 +89,9 @@ clearButton.addEventListener('click', function () {
  });
 
  // Add a click event listener to the delete button
+
+ const deleteButton = document.querySelector('.btndel');
+
 deleteButton.addEventListener('click', function () {
   deleteLastCharacter();
   document.getElementById('calculation-display').innerText = calculation;
