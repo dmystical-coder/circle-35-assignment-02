@@ -1,40 +1,40 @@
 const body = document.querySelector("body");
-const display=document.querySelector(".display")
+const contdisplay = document.querySelector(".contdisplay")
 const calculatorcontainer = document.querySelector(".calculatorcontainer");
 const btncontainer = document.querySelector(".btncontainer");
 const btnsectionA = document.querySelector(".btnsectionA");
-const btnsectionB  = document.querySelector(".btnsectionB");
+const btnsectionB = document.querySelector(".btnsectionB");
 const btnsectionBi = document.querySelector(".btnsectionBi");
-const btnsectionBii= document.querySelector(".btnsectionBii");
-const btnsingle= document.querySelector(".btnsingle");
+const btnsectionBii = document.querySelector(".btnsectionBii");
+const btnsingle = document.querySelector(".btnsingle");
 // const btndoublecolumn = document.querySelector(".btndoublecolumn");
-const  btnreturn= document.querySelector(".btnreturn");
-const  btndivide= document.querySelector(".btndivide");
+const btnreturn = document.querySelector(".btnreturn");
+const btndivide = document.querySelector(".btndivide");
 const btnmultiply = document.querySelector(".btnmultiply");
-const  btnsubtract= document.querySelector(".btnsubtract");
+const btnsubtract = document.querySelector(".btnsubtract");
 const btnadd = document.querySelector(".btnadd");
-const  btn1= document.querySelector(".btn1");
-const  btn2= document.querySelector(".btn2");
-const  btn3= document.querySelector(".btn3");
-const  btn4= document.querySelector(".btn4");
-const  btn5= document.querySelector(".btn5");
-const  btn6= document.querySelector(".btn6");
-const  btn7= document.querySelector(".btn7");
-const  btn8= document.querySelector(".btn8");
-const  btn9= document.querySelector(".btn9");
-const  btn0= document.querySelector(".btn0");
-const  btndot= document.querySelector(".btndot");
-const  btnequal= document.querySelector(".btnequal");
+const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
+const btn3 = document.querySelector(".btn3");
+const btn4 = document.querySelector(".btn4");
+const btn5 = document.querySelector(".btn5");
+const btn6 = document.querySelector(".btn6");
+const btn7 = document.querySelector(".btn7");
+const btn8 = document.querySelector(".btn8");
+const btn9 = document.querySelector(".btn9");
+const btn0 = document.querySelector(".btn0");
+const btndot = document.querySelector(".btndot");
+const btnequal = document.querySelector(".btnequal");
 //  const calculatorcontainer = document.getElementsByClassName(
 //    "calculatorcontainer"
 //  );
 const toggle = document.getElementById("toggle");
 toggle.onclick = function () {
-   calculatorcontainer.classList.toggle("active");
+  calculatorcontainer.classList.toggle("active");
   toggle.classList.toggle("active");
   body.classList.toggle("active");
-   display.classList.toggle("active")
-   btncontainer.classList.toggle("active")
+  contdisplay.classList.toggle("active")
+  btncontainer.classList.toggle("active")
   btnsectionA.classList.toggle("active")
   btnsectionB.classList.toggle("active")
   btnsectionBi.classList.toggle("active")
@@ -51,7 +51,7 @@ toggle.onclick = function () {
   btn4.classList.toggle("active");
   btn5.classList.toggle("active");
   btn6.classList.toggle("active");
-btn7.classList.toggle("active");
+  btn7.classList.toggle("active");
   btn8.classList.toggle("active");
   btn9.classList.toggle("active");
   btn0.classList.toggle("active");
@@ -61,6 +61,7 @@ btn7.classList.toggle("active");
 
 };
 
+
 // Function to update the calculation value
 let calculation = '';
 
@@ -68,16 +69,22 @@ function updateCalculation(value) {
   calculation += value;
   document.getElementById('calculation-display').innerText = calculation;
   console.log(calculation);
+
 }
-
-// Function to get the calculation results
-function calculateResult() {
-    calculation = eval(calculation);
-   console.log(calculation)
+function calculateResult(){
+  try{
+    contdisplay.value= eval (contdisplay.value);
   }
-
-  // Find the clear button element by ID
-const clearButton = document.getElementById('clear-button');
+  catch(error){
+    alert('invalid')
+  }
+}
+function clear(){
+  contdisplay.value =""
+  
+}
+function deleteLastCharacter(){
+  contdisplay.value = display.value.slice (0,-1)
 
 // Add a click event listener to the clear button
 clearButton.addEventListener('click', function () {
@@ -102,6 +109,7 @@ function deleteLastCharacter() {
   calculation = calculation.slice(0, -1); // Remove the last character
  console.log(calculation)
 }
+
 
 function calculateResult() {
   try {
