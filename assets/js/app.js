@@ -1,5 +1,6 @@
+// getting each class
 const body = document.querySelector("body");
-const contdisplay = document.querySelector(".contdisplay")
+const display = document.querySelector(".display");
 const calculatorcontainer = document.querySelector(".calculatorcontainer");
 const btncontainer = document.querySelector(".btncontainer");
 const btnsectionA = document.querySelector(".btnsectionA");
@@ -7,7 +8,6 @@ const btnsectionB = document.querySelector(".btnsectionB");
 const btnsectionBi = document.querySelector(".btnsectionBi");
 const btnsectionBii = document.querySelector(".btnsectionBii");
 const btnsingle = document.querySelector(".btnsingle");
-// const btndoublecolumn = document.querySelector(".btndoublecolumn");
 const btnreturn = document.querySelector(".btnreturn");
 const btndivide = document.querySelector(".btndivide");
 const btnmultiply = document.querySelector(".btnmultiply");
@@ -25,23 +25,21 @@ const btn9 = document.querySelector(".btn9");
 const btn0 = document.querySelector(".btn0");
 const btndot = document.querySelector(".btndot");
 const btnequal = document.querySelector(".btnequal");
-//  const calculatorcontainer = document.getElementsByClassName(
-//    "calculatorcontainer"
-//  );
 const toggle = document.getElementById("toggle");
+
+// adding the active mtd to each class
 toggle.onclick = function () {
   calculatorcontainer.classList.toggle("active");
   toggle.classList.toggle("active");
   body.classList.toggle("active");
-  contdisplay.classList.toggle("active")
-  btncontainer.classList.toggle("active")
-  btnsectionA.classList.toggle("active")
-  btnsectionB.classList.toggle("active")
-  btnsectionBi.classList.toggle("active")
-  btnsectionBii.classList.toggle("active")
-  btnsingle.classList.toggle("active")
-  // btndoublecolumn.classList.toggle("active")
-  btnreturn.classList.toggle("active")
+  display.classList.toggle("active");
+  btncontainer.classList.toggle("active");
+  btnsectionA.classList.toggle("active");
+  btnsectionB.classList.toggle("active");
+  btnsectionBi.classList.toggle("active");
+  btnsectionBii.classList.toggle("active");
+  btnsingle.classList.toggle("active");
+  btnreturn.classList.toggle("active");
   btndivide.classList.toggle("active");
   btnsubtract.classList.toggle("active");
   btnadd.classList.toggle("active");
@@ -57,71 +55,44 @@ toggle.onclick = function () {
   btn0.classList.toggle("active");
   btndot.classList.toggle("active");
   btnequal.classList.toggle("active");
-  btnmultiply.classList.toggle("active")
-
+  btnmultiply.classList.toggle("active");
 };
 
-
 // Function to update the calculation value
-let calculation = '';
+let calculation = "";
 
 function updateCalculation(value) {
   calculation += value;
-  document.getElementById('calculation-display').innerText = calculation;
+  document.getElementById("calculation-display").innerText = calculation;
   console.log(calculation);
-
 }
-function calculateResult(){
-  try{
-    contdisplay.value= eval (contdisplay.value);
-  }
-  catch(error){
-    alert('invalid')
-  }
-}
-function clear(){
-  contdisplay.value =""
-  
-}
-function deleteLastCharacter(){
-  contdisplay.value = display.value.slice (0,-1)
 
 // Add a click event listener to the clear button
-clearButton.addEventListener('click', function () {
-  calculation = ''; // Clear the calculation
-  console.log(calculation)
-  document.getElementById('calculation-display').innerText = '0'; // Clear the display
-  document.getElementById('result-display').innerText = ''; // Clear the result display
-
- });
-
- // Add a click event listener to the delete button
-
- const deleteButton = document.querySelector('.btndel');
-
-deleteButton.addEventListener('click', function () {
-  deleteLastCharacter();
-  document.getElementById('calculation-display').innerText = calculation;
+const clearButton = document.querySelector(".btnreturn");
+clearButton.addEventListener("click", function () {
+  calculation = ""; // Clear the calculation
+  console.log(calculation);
+  document.getElementById("calculation-display").innerText = "0"; // Clear the display
+  document.getElementById("result-display").innerText = ""; // Clear the result display
 });
 
- // Function to delete the last character
+// Function to delete the last character
 function deleteLastCharacter() {
-  calculation = calculation.slice(0, -1); // Remove the last character
- console.log(calculation)
-}
+  document.getElementById("result-display").innerText = "0";
+  document.getElementById("calculation-display").innerText = calculation;
 
+  calculation = calculation.toString().slice(0, -1); // Remove the last character
+  console.log(calculation);
+}
 
 function calculateResult() {
   try {
     calculation = eval(calculation);
     console.log(calculation); // Log to console
-    document.getElementById('result-display').innerText = calculation; // Update the result display
+    document.getElementById("result-display").innerText = calculation; // Update the result display
   } catch (error) {
-    document.getElementById('result-display').innerText = 'Error';
-    calculation = '';
-    console.log(calculation)
+    document.getElementById("result-display").innerText = "Error";
+    calculation = "";
+    console.log(calculation);
   }
-  
 }
-
-
