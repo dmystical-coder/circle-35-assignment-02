@@ -61,12 +61,15 @@ toggle.onclick = function () {
 
 };
 
-let contdisplay = document;
-document.querySelector('contdisplay')
-function updateCalculation
-(num) {
-  contdisplay.value += num
-  
+
+// Function to update the calculation value
+let calculation = '';
+
+function updateCalculation(value) {
+  calculation += value;
+  document.getElementById('calculation-display').innerText = calculation;
+  console.log(calculation);
+
 }
 function calculateResult(){
   try{
@@ -82,44 +85,43 @@ function clear(){
 }
 function deleteLastCharacter(){
   contdisplay.value = display.value.slice (0,-1)
- 
+
+// Add a click event listener to the clear button
+clearButton.addEventListener('click', function () {
+  calculation = ''; // Clear the calculation
+  console.log(calculation)
+  document.getElementById('calculation-display').innerText = '0'; // Clear the display
+  document.getElementById('result-display').innerText = ''; // Clear the result display
+
+ });
+
+ // Add a click event listener to the delete button
+
+ const deleteButton = document.querySelector('.btndel');
+
+deleteButton.addEventListener('click', function () {
+  deleteLastCharacter();
+  document.getElementById('calculation-display').innerText = calculation;
+});
+
+ // Function to delete the last character
+function deleteLastCharacter() {
+  calculation = calculation.slice(0, -1); // Remove the last character
+ console.log(calculation)
+}
 
 
-// // Function to update the calculation value
-// let calculation = '';
-// document.querySelector("display")
-
-// function updateCalculation(value) {
-//   calculation += value;
-//   document.querySelector('display').innerText= updateCalculation;
-// }
-
-// // Function to get the calculation results
-// function calculateResult() {
-//   try{
-//     calculation = eval(calculation);
-//     document.querySelector('display').innerText= calculation;
-    
-//   } catch (error){
-//     document.querySelector('display').innerText= 'error';
-//     calculation='';
-//   }
+function calculateResult() {
+  try {
+    calculation = eval(calculation);
+    console.log(calculation); // Log to console
+    document.getElementById('result-display').innerText = calculation; // Update the result display
+  } catch (error) {
+    document.getElementById('result-display').innerText = 'Error';
+    calculation = '';
+    console.log(calculation)
+  }
   
-  
-// }
+}
 
-// // Find the clear button element by ID
-// const clearButton = document.getElementById('clear-button');
-
-// // Add a click event listener to the clear button
-// clearButton.addEventListener('click', function () {
-//   calculation = ''; // Clear the calculation
-  
-// });
-
-// // Function to delete the last character
-// function deleteLastCharacter() {
-//   calculation = calculation.slice(0, -1); // Remove the last character
-  
-// }
 
