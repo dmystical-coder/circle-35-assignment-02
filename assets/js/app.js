@@ -96,3 +96,11 @@ function calculateResult() {
     console.log(calculation);
   }
 }
+
+  // if(calculation = ""){
+  //   const btn=document.querySelector(".btnreturn");
+  //   btn.setAttribute('disabled')
+
+  // }
+
+
