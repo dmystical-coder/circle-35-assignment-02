@@ -47,58 +47,16 @@ header.active {
     left: 20px;
   }
   
-/* main {
-    width: 20%;
-    margin: 0 auto;
-}
 
-.modecontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .btnmode {
-    margin: 5em auto 5em auto;
-} */
-
-/* .calculatorcontainer{
-    height: 26.9em;
-    border: 2px solid #f1eaea;
-    border-radius: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
-    background-color: #fff;
-    min-width: 320px;
-    min-height: 400px;
-    box-shadow: 12px 6 0 rgba(255, 255, 255, 0.2);
-}
-
-.display {
-    background-color: #c8c1c1;
-    color: white;
-    border:20px;
-    border-radius: px;
-    margin-bottom:16px;
-    text-align: right;
-    padding-right:15px;
-    margin-top:-15px;
-    padding-bottom:0.4em;
-} */
-
-/* .calculatingdisplay{
-    height: 2em;
-    margin-top: 7px;
+ .calculation-display{
+    
     color: rgb(243, 239, 239);
-    font-size: 1.1em;
-    font-weight: 400;
+    
 }
 
-.resultdisplay{
-    height: 1.7em;
-    font-size: 1.1em;
-    font-weight: 100;
-} */
+.result-display{
+     color: rgb(243, 239, 239);
+} 
 .calculatorcontainer.active{
     margin: 5% auto;
     height: 28em;
@@ -112,7 +70,7 @@ header.active {
   transform: rotateY(180deg);
 
 }
-.contdisplay.active {
+.display.active {
     background-color: #c8c1c1;
     color: white;
     border:20px;
@@ -126,6 +84,7 @@ header.active {
     font-size: 1.2em;
     font-weight: 400;
      margin-top: 0.5em; 
+     transform: rotateY(180deg);
     
 }
 .btncontainer.active{
@@ -171,7 +130,7 @@ header.active {
         background-color:#CED2D8 ;
         opacity: 1;
         &:hover{
-            background-color: #000;
+            background-color:#306064 ;
             color: #fff;
             cursor: pointer;
         }    
