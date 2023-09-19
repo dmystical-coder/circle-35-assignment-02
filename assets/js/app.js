@@ -27,6 +27,10 @@ const btndot = document.querySelector(".btndot");
 const btnequal = document.querySelector(".btnequal");
 const toggle = document.getElementById("toggle");
 
+
+// Selecting the paragraph that displays the mode title
+const mode = document.querySelector(".dark");
+
 // adding the active mtd to each class
 toggle.onclick = function () {
   calculatorcontainer.classList.toggle("active");
@@ -56,6 +60,14 @@ toggle.onclick = function () {
   btndot.classList.toggle("active");
   btnequal.classList.toggle("active");
   btnmultiply.classList.toggle("active");
+
+  // Change the mode title when toggled
+  if (calculatorcontainer.classList.contains("active")) {
+    mode.textContent = "DARK MODE";
+  } else {
+    mode.textContent = "LIGHT MODE";
+  }
+  
 };
 
 // Function to update the calculation value
