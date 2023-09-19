@@ -173,6 +173,11 @@ header {
    padding-top: 21px;
     text-align: center;
     background-color: rgb(32, 28, 28);
+    &:hover{
+        background-color: #638a6c;
+        color: white;
+        cursor: pointer;
+    }   
 }
 
 

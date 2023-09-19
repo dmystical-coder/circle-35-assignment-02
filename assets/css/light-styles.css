@@ -181,6 +181,11 @@ header.active {
     text-align: center;
     opacity: 1;
     color: #000;
+    &:hover{
+        background-color:#306064 ;
+        color: #fff;
+        cursor: pointer;
+    }    
 }
 .btn4.active {
     background-color: #E5E4EA;

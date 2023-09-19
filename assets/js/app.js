@@ -72,8 +72,8 @@ const clearButton = document.querySelector(".btnreturn");
 clearButton.addEventListener("click", function () {
   calculation = ""; // Clear the calculation
   console.log(calculation);
-  document.getElementById("calculation-display").innerText = "0"; // Clear the display
-  document.getElementById("result-display").innerText = ""; // Clear the result display
+  document.getElementById("calculation-display").innerText = ""; // Clear the display
+  document.getElementById("result-display").innerText = "0"; // Clear the result display
 });
 
 // Function to delete the last character
