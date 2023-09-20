@@ -100,11 +100,12 @@ function deleteLastCharacter() {
 function calculateResult() {
   try {
     calculation = eval(calculation);
+    calculation = Math.round(calculation * 100) / 100; // Round to two decimal places
     console.log(calculation); // Log to console
-    document.getElementById("result-display").innerText = calculation; // Update the result display
+    document.getElementById('result-display').innerText = calculation; // Update the result display
   } catch (error) {
-    document.getElementById("result-display").innerText = "Error";
-    calculation = "";
+    document.getElementById('result-display').innerText = 'Error';
+    calculation = '';
     console.log(calculation);
   }
 }
